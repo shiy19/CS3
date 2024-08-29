@@ -583,6 +583,11 @@ while True:
         break
 
 
+def sample_every_other_pixel(coord_list):
+    """Sample every other pixel in a list of coordinates."""
+    return coord_list
+
+
 #The sixth step:Comprehensive Image and Mask Processing Workflow
 masks_path = 'masks22.npy'
 image_path = f'data/original_images/{I}.jpg'
