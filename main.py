@@ -588,6 +588,14 @@ def sample_every_other_pixel(coord_list):
     return coord_list
 
 
+
+def find_endpoints_of_components(component_coords):
+    """Find two endpoints of a component."""
+    if len(component_coords) >= 2:
+        return [component_coords[0], component_coords[-1]]
+    else:
+        return [component_coords[0], component_coords[0]]
+
 #The sixth step:Comprehensive Image and Mask Processing Workflow
 masks_path = 'masks22.npy'
 image_path = f'data/original_images/{I}.jpg'
